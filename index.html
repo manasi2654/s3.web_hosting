@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My AWS CI/CD Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: #232f3e;
+            color: white;
+            padding: 20px;
+        }
+        section {
+            margin: 40px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 60%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #232f3e;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ff9900;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🚀 AWS CI/CD Pipeline Demo</h1>
+    <p>Deployed using CodePipeline + CodeBuild + S3</p>
+</header>
+
+<section>
+    <div class="card">
+        <h2>Welcome!</h2>
+        <p>This is a static website hosted on AWS S3.</p>
+        <p>Any change pushed to GitHub automatically updates this page.</p>
+        <button onclick="showMessage()">Click Me</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 My DevOps Project</p>
+</footer>
+
+<script>
+    function showMessage() {
+        alert("🎉 Deployment Successful! CI/CD is working.");
+    }
+</script>
+
+</body>
+</html>
